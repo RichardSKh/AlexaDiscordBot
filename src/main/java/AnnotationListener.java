@@ -54,7 +54,7 @@ public class AnnotationListener {
                 }
             }
         }
-        else if(message.equals("!play despacito")){
+        else if(message.equals("!play ")){
             AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
             AudioSourceManagers.registerRemoteSources(playerManager);
             AudioPlayer player = playerManager.createPlayer();
