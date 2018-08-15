@@ -41,6 +41,14 @@ public class AnnotationListener {
 //                    person = "@Stanislav_Khudik#6195";
                     nickaname = "Лил Стас";
                 }
+                if(person.equalsIgnoreCase("BeaRRRR")) {
+//                    person = "BeaRRRR#0845";
+                    nickaname = "Лил Миша";
+                }
+                if(person.equalsIgnoreCase("Ефросинья")) {
+//                    person = "StarUnicorn#5211";
+                    nickaname = "Лил Ефросинья";
+                }
                 if(nickaname.isEmpty()) nickaname= person;
 //            BotUtil.sendMessage(event.getChannel(),"/tts " + person.substring(0,15) + " го катать");
                 for (int i = 0; i<5 ;i++) {
@@ -54,7 +62,7 @@ public class AnnotationListener {
                 }
             }
         }
-        else if(message.equals("!play despacito")){
+        else if(message.equals("!play ")){
             AudioPlayerManager playerManager = new DefaultAudioPlayerManager();
             AudioSourceManagers.registerRemoteSources(playerManager);
             AudioPlayer player = playerManager.createPlayer();
